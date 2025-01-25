@@ -10,3 +10,4 @@ jobs:
                 echo "getting code"
                 echo "${{tojson(github)}}"
                 git clone https://github.com/${{github.repository}}.git
+                ls

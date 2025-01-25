@@ -1,5 +1,5 @@
 name: greeting
-on: push
+on: [push, workflow_call]
 jobs:
     greet:
         runs-on: ubuntu-latest

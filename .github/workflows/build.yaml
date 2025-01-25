@@ -1,0 +1,12 @@
+name: greeting
+on: [push, workflow_dispatch]
+jobs:
+    greet:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "get-code"  # to run on runner we first take code
+              run: |
+                echo "hello"
+                echo "getting code"
+                echo "${{tojson(github)}}"
+                git clone https://github.com/${{github.repository}}.git

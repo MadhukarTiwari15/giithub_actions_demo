@@ -1,7 +1,7 @@
 name: greeting
 on: [push, workflow_dispatch]
 jobs:
-    greet:
+    get-code:
         runs-on: ubuntu-latest
         steps:
             - name: "get-code"  # to run on runner we first take code

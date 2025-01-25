@@ -1,4 +1,4 @@
-name: greeting
+name: greeting2
 on: [push, workflow_dispatch]
 jobs:
     get-code:
